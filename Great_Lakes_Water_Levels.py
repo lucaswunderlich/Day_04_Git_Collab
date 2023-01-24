@@ -23,6 +23,8 @@ mhu_file = pd.read_csv("mhu.csv", skiprows = 0)
 #print(mhu_file["time"])
 #print(mhu_file["lake average"])
 plt.plot(mhu_file["time"], mhu_file["lake average"])
+plt.savefig("mhu.png")
+
 
 
 

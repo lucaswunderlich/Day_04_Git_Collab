@@ -10,7 +10,11 @@ As instructed in the in-class activity notebook for today, you are
 only expected to complete one PART below. Do not worry if your group 
 is not big enough to finish all parts below, but if you have extra 
 time, you're welcome to do so.
+<<<<<<< HEAD
 """
+=======
+""" 
+>>>>>>> Maramreddy
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -39,7 +43,9 @@ plt.savefig("sup.png")
 # PART 3
 # Using the Erie Dataset, plot the Water Level, the second column, 
 # as a function of time years
-
+eri_data = pd.read_csv("eri.csv", skiprows = 0) 
+eri_data.plot(kind ="scatter", x ="time", y = "water level")
+plt.savefig("eri.png")
 
 
 # PART 4

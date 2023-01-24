@@ -26,11 +26,13 @@ plt.plot(mhu_file["time"], mhu_file["lake average"])
 plt.savefig("mhu.png")
 
 
-
-
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
+sup_data = pd.read_csv("sup.csv", skiprows = 0)
+sup_data.plot(kind = 'scatter', x = 'year', y = 'lake levels')
+plt.savefig("sup.png")
+
 
 
 

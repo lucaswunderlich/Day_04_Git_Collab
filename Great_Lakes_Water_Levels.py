@@ -20,7 +20,9 @@ import matplotlib.pyplot as plt
 # Using the Michigan/Huron Dataset, plot the Water Level, the second 
 # column, as a function of time years
 mhu_file = pd.read_csv("mhu.csv", skiprows = 0)
-plt.plot(mhu_file[1], mhu_file[0])
+#print(mhu_file["time"])
+#print(mhu_file["lake average"])
+plt.plot(mhu_file["time"], mhu_file["lake average"])
 
 
 

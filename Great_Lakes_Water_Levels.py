@@ -20,11 +20,12 @@ import matplotlib.pyplot as plt
 # Using the Michigan/Huron Dataset, plot the Water Level, the second 
 # column, as a function of time years
 
-
-
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
+sup_data = pd.read_csv("sup.csv", skiprows = 0)
+plt.plot(sup_data["time"], sup_data["lake levels"])
+
 
 
 
